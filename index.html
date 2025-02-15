@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Gradient Text Animation */
+        .gradient-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 5rem;
+            background: linear-gradient(
+                to right,
+                #9747FF 20%,
+                #00A1FF 38%,
+                #D08B97 56%,
+                #FF3A44 80%,
+                #F5B754 100%
+            );
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: gradient 4s ease-in-out infinite;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% center;
+            }
+            50% {
+                background-position: 100% center;
+            }
+            100% {
+                background-position: 0% center;
+            }
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Responsive Images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="gradient-text">Special Offers</h1>
+        <p>Start editing this template to build your website!</p>
+    </div>
+</body>
+</html>
